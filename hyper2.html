@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Second Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+</head>
+
+<body bgcolor="#c0c0c0">
+    <header>
+        <h1>
+            <font color="#c1250f" Styling my page</h1>
+                <h2>September 12&ndash;19th &mdash; Lagos, LA</h2>
+    </header>
+    <!-- Ordered and Unordered Lists-->
+    <ol>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+    </ol>
+    <ul>
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+    <hr />
+    <p>Horizontal line</p>
+    <!-- Form-->
+    <div class="section">
+        <h2><span>Log in Here</span></h2>
+        <form action="#" method="POST">
+            <label>Your Name:</label>
+            <input id="user" name="username" type="text" /><br>
+            <label>Password:</label>
+            <input type="password" name="password" /><br>
+            <label for="email">Your e-mail Address:</label>
+            <input type="text" name="email" placeholder="email@example.com" autofocus required /><br>
+            <label>Your URL:</label>
+            <input id="url" name="url" type="url" placeholder="example.com" /><br>
+            <label>Your Phone Number:</label>
+            <input id="tel" name="tel" type="tel" placeholder="+234-000-000-0000" /><br>
+            <input type="radio" name="gender" value="male" /> Male <br>
+            <input type="radio" name="gender" value="female" /> Female <br>
+            <input type="checkbox" name="yes" value="1" /> Yes <br>
+            <input type="checkbox" name="no" value="2" /> No <br>
+            <input type="submit" name="submit" value="Submit" /> <br>
+            <input id="car" type="text" list="colours" />
+            <datalist id="colours">
+                <option value="Red"></option>
+                <option value="Grey"></option>
+                <option value="Brown"></option>
+            </datalist>
+        </form>
+    </div>
+    <!--Audio-->
+    <audio src="https://www.ceenaija.com/downoad-music-anchor-hillsong-worship-mp3-lyrics.mp3/" controls>
+        Audio element not supported by your browser
+    </audio>
+    <!--autoplay loop, is both for audio and video, it automatically replays the specified file.-->
+    <audio controls>
+        <source src="C:\Olufunke\unarranged\08-Prince-Of-Peace.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+    </audio>
+    <!--Video, I'm not sure as to why the video is that big though-->
+    <video controls>
+        <source src="C:\Olufunke\unarranged\Flip.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Video is not supported by your browser
+    </video>
+    <!--SVG <polygon points="100 100, 200 200, 300 0" style="fill: aqua; stroke:blueviolet;" />-->
+    <!--<img src="C:\Olufunke\unarranged\Muscle.svg" alt="" height="300" />
+        <svg width="2000" height="2000">
+            <circle cx="80" cy="80" r="50" fill="green" />
+        </svg>-->
+    <svg width="2000" height="2000">
+        <circle cx="80" cy="80" r="50" fill="orange">
+        </circle>
+    </svg>
+    <svg width="1000" height="250">
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="300" dur="3s" fill="freeze" repeatCount="indefinite"></animate>
+        </rect>
+    </svg>
+    <svg width="500" height="500">
+        <path d="M 0 0 L200 200 L200 0 Z" style="stroke: blue; fill: none;"></path>
+    </svg>
+    <!--Canvas-->
+    <canvas id="canvas1" width="400" height="300"></canvas>
+    <!--<script>
+            var c=document.getElementById("canvas1"); var ctx = c.getContext("2d"); ctx.fillRect(20,20,100,100)
+        </script>
+        <script>
+            var c = document.getElementById("canvas1"); var ctx = c.getContext("2d"); ctx.font="bold 22px Tahoma"; ctx.textAlign="Start"; ctx.fillText("start", 10, 30);
+        </script>-->
+    <script>
+        var c = document.getElementById("canvas1"); var ctx = c.getContext("2d"); ctx.fillStyle = "FF0000"; ctx.fillRect(10, 10, 100, 100);
+        ctx.rotate((Math.PI / 180) * 25); //
+        ctx.fillStyle = "#0000FF"; ctx.fillRect(10, 10, 100, 100);
+    </script>
+</body>
+
+</html>
