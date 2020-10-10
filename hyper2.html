@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Second Page</title>
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <style>
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body style="background-color: #c0c0c0;">
@@ -60,9 +67,9 @@
         <source src="C:\Olufunke\unarranged\08-Prince-Of-Peace.mp3" type="audio/mpeg">
         <source src="audio.ogg" type="audio/ogg">
     </audio>
-    <!--Video, I'm not sure as to why the video is that big though-->
-    <video controls>
-        <source src="C:\Olufunke\unarranged\Flip.mp4" type="video/mp4">
+    <!--Video, I'm not sure as to why the video is that big though, finally got it, I didn't specify the width and height.-->
+    <video width="25%" controls>
+        <source src="C:\Olufunke\unarranged\Flip.mp4" type="video/mp4" >
         <source src="video.ogg" type="video/ogg">
         Video is not supported by your browser
     </video>
